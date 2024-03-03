@@ -1,11 +1,14 @@
-.Intro 
+@use "styles/mixins"
+
+.Intro
   background-color: #d5e7e8
   height: 600px
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
 
-  .label
-    font-size: 5em
-    margin-bottom: 30px
+  .content
+    @include mixins.flex-centered
+    height: 100%
+    flex-direction: column
+
+    .label
+      font-size: 5em
+      margin-bottom: 30px
