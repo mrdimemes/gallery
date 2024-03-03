@@ -1,4 +1,11 @@
-import { Intro, About, MenuPreview, Events } from "components/sections";
+import {
+  Intro,
+  About,
+  MenuPreview,
+  Events,
+  Footer,
+} from "components/sections";
+
 
 const Main = () => {
   return (
@@ -7,6 +14,7 @@ const Main = () => {
       <About />
       <MenuPreview />
       <Events />
+      <Footer />
     </>
   );
 }
