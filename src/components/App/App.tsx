@@ -1,9 +1,8 @@
-function App() {
-  return (
-    <div>
-      
-    </div>
-  );
+import { Main } from "pages/Main";
+
+
+const App = () => {
+  return <Main />;
 };
 
 
