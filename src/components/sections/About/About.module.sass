@@ -1,0 +1,23 @@
+@use "styles/mixins"
+
+.About
+  font-size: 2em
+  padding-top: 50px
+  padding-bottom: 50px
+  display: flex
+  gap: 70px
+
+  .column
+    width: 100px
+    flex-grow: 1
+  
+  .info
+    text-align: center
+    h1
+      font-size: 1.5rem
+      margin-bottom: 20px
+  
+  .imageContainer
+    @include mixins.flex-centered
+    background-color: black
+    border-radius: 10px

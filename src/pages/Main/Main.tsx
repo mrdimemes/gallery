@@ -1,9 +1,10 @@
-import { Intro } from "components/sections";
+import { Intro, About } from "components/sections";
 
 const Main = () => {
   return (
     <>
       <Intro />
+      <About />
     </>
   );
 }
