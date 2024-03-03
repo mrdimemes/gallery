@@ -1,6 +1,10 @@
+import { Intro } from "components/sections";
+
 const Main = () => {
   return (
-    <>Main</>
+    <>
+      <Intro />
+    </>
   );
 }
 
