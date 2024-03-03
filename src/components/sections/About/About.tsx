@@ -8,7 +8,7 @@ import styles from "./About.module.sass";
 
 const About = () => {
   return (
-    <section className={styles.About}>
+    <section>
       <SectionContent className={styles.content}>
 
         <div className={classNames(styles.column, styles.info)}>
