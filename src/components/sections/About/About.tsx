@@ -23,7 +23,7 @@ const About = () => {
 
         <img
           className={classNames(styles.column, styles.imageContainer)}
-          src="gallery/about.jpeg"
+          src="gallery/about.jpg"
         />
 
       </SectionContent>
