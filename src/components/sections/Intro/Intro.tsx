@@ -8,11 +8,10 @@ import styles from "./Intro.module.sass";
 const Intro = () => {
   return (
     <section className={styles.Intro}>
+      <div className={styles.blur} />
       <SectionContent className={styles.content}>
-
         <div className={styles.label}>{CAFE_NAME}</div>
         <ReserveButton />
-
       </SectionContent>
     </section>
   );

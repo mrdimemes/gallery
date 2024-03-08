@@ -1,13 +1,25 @@
 @use "styles/mixins"
 
 .Intro
-  background-color: #d5e7e8
+  position: relative
+  background-image: url("/assets/images/bg.jpg")
   height: 600px
 
+  .blur
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    backdrop-filter: blur(6px)
+    z-index: 2
+
   .content
+    position: relative
     @include mixins.flex-centered
     height: 100%
     flex-direction: column
+    z-index: 3
 
     .label
       font-size: 2.5em
