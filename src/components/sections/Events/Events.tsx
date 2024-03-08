@@ -27,6 +27,7 @@ const Events = () => {
               events.map(event => {
                 return (
                   <img
+                    key={event.id}
                     className={styles.plate}
                     src={`gallery/events/${event.image}`}
                     onClick={() => setSelectedEvent(event)}
