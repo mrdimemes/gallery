@@ -5,17 +5,19 @@
 
   .grid
     display: grid
-    grid-template-columns: 1fr 1fr 1fr
+    max-width: 100%
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)
     gap: 50px
 
-    .imageContainer
+    .image
       background-color: black
-      min-height: 100px
       border-radius: 10px
+      overflow: hidden
+      width: 100%
 
     .plates
       display: grid
-      grid-template-columns: 1fr 1fr 1fr 1fr
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)
       gap: 10px
 
     .info
@@ -27,3 +29,7 @@
   background-color: black
   min-height: 30px
   border-radius: 10px
+  width: 100%
+  cursor: pointer
+  &:hover
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px

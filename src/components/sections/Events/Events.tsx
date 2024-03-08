@@ -1,9 +1,14 @@
+import { useState } from "react";
+
 import { SectionContent } from "components/SectionContent";
+import events from "constants/events";
 
 import styles from "./Events.module.sass";
 
 
 const Events = () => {
+  const [selectedEvent, setSelectedEvent] = useState(events[0]);
+
   return (
     <section>
       <SectionContent className={styles.content}>
@@ -12,24 +17,28 @@ const Events = () => {
 
         <div className={styles.grid}>
 
-          <div className={styles.imageContainer}></div>
+          <img
+            className={styles.image}
+            src={`gallery/events/${selectedEvent.image}`}
+          />
 
           <div className={styles.plates}>
-            <div className={styles.plate}></div>
-            <div className={styles.plate}></div>
-            <div className={styles.plate}></div>
-            <div className={styles.plate}></div>
-            <div className={styles.plate}></div>
-            <div className={styles.plate}></div>
-            <div className={styles.plate}></div>
-            <div className={styles.plate}></div>
-            <div className={styles.plate}></div>
-            <div className={styles.plate}></div>
+            {
+              events.map(event => {
+                return (
+                  <img
+                    className={styles.plate}
+                    src={`gallery/events/${event.image}`}
+                    onClick={() => setSelectedEvent(event)}
+                  />
+                )
+              })
+            }
           </div>
 
           <div className={styles.info}>
             <h2>Описание</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis excepturi ratione exercitationem vero, expedita odit quis velit sint dignissimos nobis molestiae provident eius distinctio itaque dolore veritatis enim aliquam odio deleniti hic iste cumque veniam facere quos. Vel itaque assumenda debitis ducimus porro harum nisi omnis corporis blanditiis reiciendis. Nostrum!</p>
+            <p>{selectedEvent.about}</p>
           </div>
 
         </div>
