@@ -14,11 +14,17 @@ const About = () => {
 
         <div className={classNames(styles.column, styles.info)}>
           <h1>О нас</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus rerum, enim laudantium consectetur sunt, neque est, quidem modi labore nisi ab? Dolorum, tenetur autem molestiae officia eos facilis itaque corrupti quisquam, rem mollitia inventore dolore nam explicabo amet quis cumque architecto dolores ab! Quisquam temporibus asperiores numquam voluptatibus. Error quam consectetur aliquam pariatur voluptate, inventore reiciendis, praesentium quo esse tempore debitis, animi beatae accusantium! Corrupti eum praesentium accusamus sunt voluptatum quia ab qui provident odio consequuntur quaerat beatae expedita odit, placeat repellat veritatis perferendis omnis sit et nisi iure? Dolorem, explicabo. In tempora nobis excepturi voluptatem? Error cumque possimus illum.</p>
+          <p>Детское кафе “MAGIC CASTLE” - это уютное место, где дети могут наслаждаться вкусными блюдами и развлечениями. Интерьер выполнен в стиле волшебного замка с яркими красками и сказочными элементами.</p>
+          <p>Родители могут отдохнуть в отдельной зоне, наблюдая за своими детьми через большое зеркало или стеклянную стену.</p>
+          <p>“MAGIC CASTLE” также предлагает услугу празднования дней рождений и других детских праздников с индивидуальным подходом к каждому клиенту. Можно заказать украшение зала, выбрать аниматора, торт и другие дополнительные услуги.</p>
+          <p>Для удобства посетителей имеется парковка, а также возможность заказать еду на вынос.</p>
           <ReserveButton />
         </div>
 
-        <div className={classNames(styles.column, styles.imageContainer)}></div>
+        <img
+          className={classNames(styles.column, styles.imageContainer)}
+          src="gallery/about.jpeg"
+        />
 
       </SectionContent>
     </section>

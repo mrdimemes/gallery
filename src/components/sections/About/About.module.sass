@@ -2,6 +2,7 @@
 
 .content
   display: flex
+  align-items: center
   gap: 70px
 
   .column
@@ -15,8 +16,10 @@
       margin-bottom: 20px
     p
       margin-bottom: 15px
+      text-align: left
 
   .imageContainer
-    @include mixins.flex-centered
     background-color: black
     border-radius: 10px
+    height: fit-content
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
