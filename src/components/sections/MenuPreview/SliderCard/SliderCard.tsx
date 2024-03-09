@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 import { SliderCardProps } from "../types";
 
 import styles from "./SliderCard.module.sass";
 
 
-const SliderCard = ({ image, name, compound }: SliderCardProps) => {
+const SliderCard = ({ id, image, name, compound }: SliderCardProps) => {
+  const navigate = useNavigate();
   return (
     <div className={styles.SliderCard}>
       <div className={styles.imageContainer}>
@@ -13,6 +16,12 @@ const SliderCard = ({ image, name, compound }: SliderCardProps) => {
         <div>{name}</div>
         <div>{compound}</div>
       </div>
+      <button
+        className={styles.expandButton}
+        onClick={() => navigate("/gallery/preview/" + id)}
+      >
+        Рассмотреть!
+      </button>
     </div>
   );
 };

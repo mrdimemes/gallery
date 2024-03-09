@@ -28,6 +28,7 @@ const MenuPreview = () => {
               return (
                 <SliderCard
                   key={item.id}
+                  id={item.id}
                   compound={item.compound}
                   name={item.label}
                   image={item.staticPreviewPath}
