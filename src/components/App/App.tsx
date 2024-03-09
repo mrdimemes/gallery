@@ -11,7 +11,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="gallery/" element={<Main />} />
-          <Route path="gallery/preview" element={<Model />} />
+          <Route path="gallery/preview/:modelId" element={<Model />} />
         </Routes>
       </BrowserRouter>
     </div>
