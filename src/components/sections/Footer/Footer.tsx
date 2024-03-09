@@ -12,7 +12,7 @@ const Footer = () => {
 
         <div className={styles.brand}>
           <div>{CAFE_NAME}</div>
-          <img className={styles.logo} src="gallery/logo.png" />
+          <img className={styles.logo} src="logo.png" />
         </div>
 
         <ReserveButton />

@@ -19,7 +19,7 @@ const Events = () => {
 
           <img
             className={styles.image}
-            src={`gallery/events/${selectedEvent.image}`}
+            src={`events/${selectedEvent.image}`}
           />
 
           <div className={styles.plates}>
@@ -29,7 +29,7 @@ const Events = () => {
                   <img
                     key={event.id}
                     className={styles.plate}
-                    src={`gallery/events/${event.image}`}
+                    src={`events/${event.image}`}
                     onClick={() => setSelectedEvent(event)}
                   />
                 )

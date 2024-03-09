@@ -10,7 +10,7 @@ const SliderCard = ({ id, image, name, compound }: SliderCardProps) => {
   return (
     <div className={styles.SliderCard}>
       <div className={styles.imageContainer}>
-        <img className={styles.preview} src={`gallery/staticPreviews/${image}`} />
+        <img className={styles.preview} src={`staticPreviews/${image}`} />
       </div>
       <div className={styles.description}>
         <div>{name}</div>
