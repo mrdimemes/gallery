@@ -35,7 +35,7 @@ const menu: MenuItem[] = [
     label: "Овощи",
     compound: "Граммовки 5",
     price: 249,
-    staticPreviewPath: "5.png",
+    staticPreviewPath: "sss.gif",
   },
   {
     id: 6,
