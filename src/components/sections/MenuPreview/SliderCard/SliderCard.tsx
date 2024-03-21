@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { SliderCardProps } from "../types";
@@ -6,11 +7,24 @@ import styles from "./SliderCard.module.sass";
 
 
 const SliderCard = ({ id, image, name, compound }: SliderCardProps) => {
+  const [hover, setHover] = useState(false);
+
   const navigate = useNavigate();
   return (
-    <div className={styles.SliderCard}>
+    <div
+      className={styles.SliderCard}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
       <div className={styles.imageContainer}>
-        <img className={styles.preview} src={`staticPreviews/${image}`} />
+        {
+          hover &&
+          <img className={styles.preview} src="gg.gif" alt="" />
+        }
+        {
+          !hover &&
+          <img className={styles.preview} src={`staticPreviews/${image}`} />
+        }
       </div>
       <div className={styles.description}>
         <div>{name}</div>
