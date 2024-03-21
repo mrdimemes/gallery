@@ -19,7 +19,7 @@ const SliderCard = ({ id, image, name, compound }: SliderCardProps) => {
       <div className={styles.imageContainer}>
         {
           hover &&
-          <img className={styles.preview} src="gg.gif" alt="" />
+          <img className={styles.preview} src="bb.gif" alt="" />
         }
         {
           !hover &&
